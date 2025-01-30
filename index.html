@@ -4,8 +4,350 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets</title>
+
+    <!-- sora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- ADLam Display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="c1-assets/logo-header.png" type="image/x-icon">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- for custom tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'h1-color':'#FFDC26'
+              }
+            }
+          }
+        }
+      </script>
+      <!-- daisy UI -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <style>
+        .sora-normal{
+          font-family: "Sora", serif;
+        }
+
+        .ADLam-normal{
+          font-family: "ADLaM Display", serif;
+        }
+      </style>
+      
 </head>
-<body>
-    
+<body class="sora-normal">
+    <header>
+        <nav class="bg-[#FFF9F4]">
+            <!-- <div>
+                <div class="container mx-auto navbar bg-base-100 flex justify-evenly">
+                    
+                    <div>
+
+                        <div>
+                            <img src="c1-assets/logo-header.png" alt="">
+                        </div>
+                        <div>
+                            <div class="navbar-center">
+                                <a class="text-xl" >Browse<span>4</span>Pets
+                                </a>
+                              </div>
+                        </div>
+
+                    </div>
+                    <div class="flex gap-7 justify-center">
+                        
+                        <div>
+                            <a href="">Find a pet</a>
+                        </div>
+                        <div>
+                            <a href="">Breeds</a>
+                        </div>
+                        <div>
+                            <a href="">Contact us</a>
+                        </div>
+
+                    </div>
+
+                    <div class="navbar-end">
+                      <button class="btn btn-ghost btn-circle">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </button>
+                      <button class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                          </svg>
+                          <span class="badge badge-xs badge-primary indicator-item"></span>
+                        </div>
+                      </button>
+                      <div class="navbar-start">
+                        <div class="dropdown">
+                          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                          </div>
+                          <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div> -->
+            <div>
+                <div class="container mx-auto navbar bg-base-100 flex justify-between items-center px-10 bg-[#FFF9F4]">
+                    <!-- Left Section -->
+                    <div class="flex items-center gap-4">
+                        <img src="c1-assets/logo-header.png" alt="">
+                        <div class="navbar-center">
+                            <a class="text-xl">Browse<span>4</span>Pets</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Center Section -->
+                    <div class="flex gap-7">
+                        <a href="">Find a pet</a>
+                        <a href="">Breeds</a>
+                        <a href="">Contact us</a>
+                    </div>
+                    
+                    <!-- Right Section -->
+                    <div class="sm:flex items-center gap-4">
+                        <button class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                                <span class="badge badge-xs badge-primary indicator-item"></span>
+                            </div>
+                        </button>
+                        <div>
+                            
+                                <button>Login</button>
+                            
+                        </div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Homepage</a></li>
+                                <li><a>Portfolio</a></li>
+                                <li><a>About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+
+        <!-- hero section -->
+        <section class="container mx-auto">
+            <div class="my-[100px] flex flex-col gap-[-20px]">
+                
+                <div>
+                  <h1 class="ADLam-normal text-6xl sm: mx-5">Pamper Your Pet, <br>Because They Deserve the Bes</h1>
+
+                <p class="my-[16px]  sm: mx-5">
+                  Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!
+                </p>
+
+                <button class="btn bg-[#FFDC26] sm: mx-5">
+                  Find a pet
+                </button>
+                </div>
+
+                <div class="">
+                  <img class="mt[-400px]h-[500px] w-full sm: mx-5" src="c1-assets/cat-big.png" alt="">
+
+                </div>
+
+            </div>
+         </section>
+      
+    </header>
+
+    <main>
+        <section class="container mx-auto my-10">
+          <div>
+            <h1 class="ADLam-normal text-3xl my-10 sm: mx-5">
+              Browse By Categories
+            </h1>
+          </div>
+          <div class="grid grid-cols-2 gap-3 justify-center lg:grid-cols-6 gap-3 mx-5 justify-center">
+
+            <div class="card bg-base-100 w-[200px]
+             shadow-xl bg-[#FCCC80] flex justify-center items-center p-7">
+              <figure >
+                
+                <div class="avatar">
+                  <div class="w-24 rounded-full bg-white">
+                    <img class="p-5" src="c1-assets/dog-cartoon.png" />
+                  </div>
+                </div>
+  
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dog</h2>
+                <p>3 items</p>
+                
+              </div>
+            </div>
+            <div class="card bg-base-100 w-[200px] shadow-xl bg-[#FCCC80] flex justify-center items-center p-7">
+              <figure>
+                
+                <div class="avatar">
+                  <div class="w-24 rounded-full bg-white">
+                    <img class="p-5" src="c1-assets/fish-cartoon.png" />
+                  </div>
+                </div>
+  
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dog</h2>
+                <p>3 items</p>
+                
+              </div>
+            </div>
+  
+  
+            <div class="card bg-base-100 w-[200px] shadow-xl bg-[#FCCC80] flex justify-center items-center p-7">
+              <figure>
+                
+                <div class="avatar">
+                  <div class="w-24 rounded-full bg-white">
+                    <img class="p-5" src="c1-assets/cat-cartoon.png" />
+                  </div>
+                </div>
+  
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dog</h2>
+                <p>3 items</p>
+                
+              </div>
+            </div>
+  
+            <div class="card bg-base-100 w-[200px] shadow-xl bg-[#FCCC80] flex justify-center items-center p-7">
+              <figure>
+                
+                <div class="avatar">
+                  <div class="w-24 rounded-full bg-white">
+                    <img class="p-5" src="c1-assets/bird-cartoon.png" />
+                  </div>
+                </div>
+  
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dog</h2>
+                <p>3 items</p>
+                
+              </div>
+            </div>
+  
+            <div class="card bg-base-100 w-[200px] shadow-xl bg-[#FCCC80] flex justify-center items-center p-7">
+              <figure>
+                
+                <div class="avatar">
+                  <div class="w-24 rounded-full bg-white">
+                    <img class="p-5" src="c1-assets/mouse-cartoon.png" />
+                  </div>
+                </div>
+  
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dog</h2>
+                <p>3 items</p>
+                
+              </div>
+            </div>
+  
+            <div class="card bg-base-100 w-[200px] shadow-xl bg-[#FCCC80] flex justify-center items-center p-7">
+              <figure>
+                
+                <div class="avatar">
+                  <div class="w-24 rounded-full bg-white">
+                    <img class="p-5"  src="c1-assets/rabbit-cartoon.png" />
+                  </div>
+                </div>
+  
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Dog</h2>
+                <p>3 items</p>
+                
+              </div>
+            </div>
+
+          </div>
+          
+        </section>
+
+        <section>
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
