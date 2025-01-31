@@ -36,6 +36,10 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
 
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
       <style>
         .sora-normal{
           font-family: "Sora", serif;
@@ -223,6 +227,7 @@
     </header>
 
     <main>
+      <!-- browse by categories -->
         <section class="container mx-auto my-10">
           <div>
             <h1 class="ADLam-normal text-3xl my-10 sm: mx-5">
@@ -338,10 +343,170 @@
           
         </section>
 
-        <section>
+        <!-- trending pet products -->
+        <section class="my-[30px] lg:my-[100px] mx-0 bg-[#FFF9F4] px-[16px] py-[16px] lg:px-[140px] lg:py-[140px]">
+          <div class="container mx-auto">
+          <h2 class="  text-adlam text-2xl lg:text-[36px] mb-6 lg:mb-[38px] ADLam-normal text-3xl">Trending Pet Products</h2>
+          <div class=" grid grid-cols-2 grid-rows-7 lg:grid-cols-5 lg:grid-rows-3 gap-4 mt-5">
+        
+           
+            <div class="bg-[#F9DF8A] p-5 lg:w-auto col-span-2 row-span-3 lg:col-span-2 lg:row-span-3  rounded-xl">
+              <h2 class="text-adlam text-[26px] lg:text-[32px] my-3 ADLam-normal">T-Shirt For Dogs</h2>
+              <p class="text-sora text-[14px] lg:text-xl my-3">Stylish and comfy, perfect for keeping<br> your pup cozy !</p>
+              <button class="btn bg-white text-black text-xl h-11 px-5 py-2 rounded-lg mt-4">Register</button>
+              <img src="./c1-assets/cute-pet-mid.png" alt="Cute Pet" class="w-48   lg:mt-[-100px] lg:ml-[330px] ml-[130px] mt-[-50px]">
+            </div>
+           
+            
+        
+            <div class="bg-white shadow-xl p-4    lg:h-[118px] rounded-xl flex items-center">
+              <img src="./c1-assets/pet-couch.png" alt="Pet Bed" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+              <div class="ml-4 flex flex-col justify-center">
+                <h2><div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+                <h2 class="text-lg font-semibold">Pet Bed</h2>
+                <p class="text-sm">$12.99</p>
+              </div>
+            </div>
+            <div class="bg-white shadow-xl p-4  lg:h-[118px] rounded-xl flex items-center">
+              <img src="./c1-assets/dog-cartoon.png" alt="Dog Toy" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+              <div class="ml-4 flex flex-col justify-center">
+                <h2><div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+                <h2 class="text-lg font-semibold">Dog Toy</h2>
+                <p class="text-sm">$15.99</p>
+              </div>
+            </div>
+            
+            <div class="bg-white shadow-xl p-4   lg:h-[118px] rounded-xl flex items-center">
+              <img src="./c1-assets/cat-cartoon.png" alt="Cat Bed" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+              <div class="ml-4 flex flex-col justify-center">
+                <h2><div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+                <h2 class="text-lg font-semibold">Cat Bed</h2>
+                <p class="text-sm">$29.99</p>
+              </div>
+            </div>
+            
+            <div class="bg-white shadow-xl p-4  lg:h-[118px] rounded-xl flex items-center">
+              <img src="./c1-assets/fish-cartoon.png" alt="Fish Tank" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+              <div class="ml-4 flex flex-col justify-center">
+                <h2><div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+                <h2 class="text-lg font-semibold">Fish Tank</h2>
+                <p class="text-sm">$45.99</p>
+              </div>
+            </div>
+            
+            <div class="bg-white shadow-xl p-4   lg:h-[118px] rounded-xl flex items-center">
+              <img src="./c1-assets/bird-cartoon.png" alt="Bird Cage" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+              <div class="ml-4 flex flex-col justify-center">
+                <h2><div class="rating">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+                <h2 class="text-lg font-semibold">Bird Cage</h2>
+                <p class="text-sm">$49.99</p>
+              </div>
+            </div>
+            
+            <div class="bg-white shadow-xl p-4   lg:h-[118px] rounded-xl flex items-center">
+              <img src="./c1-assets/rabbit-cartoon.png" alt="Rabbit Food" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+              <div class="ml-4 flex flex-col justify-center">
+                <h2><div class="rating">
 
+                  <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+        <h2 class="text-lg font-semibold">Rabbit Food</h2>
+        <p class="text-sm">$9.99</p>
+      </div>
+    </div>
+    
+    <div class="bg-white shadow-xl p-4   lg:h-[118px] rounded-xl flex items-center">
+      <img src="./c1-assets/logo-footer.png" alt="Hamster Wheel" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+      <div class="ml-4 flex flex-col justify-center">
+        <h2><div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+        <h2 class="text-lg font-semibold">Cat Toy</h2>
+        <p class="text-sm">$14.99</p>
+      </div>
+    </div>
+    
+    <div class="bg-white shadow-xl p-4  lg:h-[118px] rounded-xl flex items-center">
+      <img src="./c1-assets/mouse-cartoon.png" alt="Mouse House" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+      <div class="ml-4 flex flex-col justify-center">
+        <h2><div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+        <h2 class="text-lg font-semibold">Mouse House</h2>
+        <p class="text-sm">$18.99</p>
+      </div>
+    </div>
+    
+    <div class="bg-white shadow-xl p-4   lg:h-[118px] rounded-xl lg:flex items-center hidden">
+      <img src="./c1-assets/pet-couch.png" alt="Parrot Toy" class="rounded-xl bg-[#FFF9F4] p-5 lg:p-2 w-[80px] h-[80px] object-cover"/>
+      <div class="ml-4 flex flex-col justify-center">
+        <h2><div class="rating">
+          <input type="radio" name="rating-2" class="mask mask-star-2 w-5  mr-2 bg-[#F9DF8A]" ></div><span class="text-lg">4.5</span></h2>
+        <h2 class="text-lg font-semibold">Parrot Toy</h2>
+        <p class="text-sm">$12.99</p>
+      </div>
+    </div>
+    
+  </div>
+        </section>
 
+        <!-- Everyday low price -->
+        <section class="container mx-auto">
+            <div class="sm:  lg: flex justify-center items-center ">
 
+              <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] flex justify-center items-center p-7 h-[480px] rounded-lg sm: mx-5">
+
+                <div class=" sm: mx-5">
+                  <p class="my-3">Under Price</p>
+                  <h1 class="ADLam-normal text-3xl">Pet Grooming Mitt</h1>
+                  <p class="my-3 text-white">
+                    (Easy Hair Removal)
+                  </p>
+                  <h1 class="ADLam-normal text-4xl">$7.99</h1>
+                </div>
+
+                <div>
+                  <img src="c1-assets/cute-dog-mid.png" alt="">
+                </div>
+
+              </div>
+
+              <div class="rounded-lg bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] h-[480px] p-7 sm: mx-5">
+
+                
+                  <h1 class="ADLam-normal text-3xl">T-Shirt for Dogs</h1>
+                <h1 class="ADLam-normal text-4xl text-[#FFDC26]">$7.99</h1>
+                
+                <img class="mt-[-30px]" src="c1-assets/cute-pet-mid.png" alt="">
+
+              </div>
+              
+
+            </div>
+        </section>
+
+        <!-- get pawsome news -->
+        <section class="container mx-auto my-20">
+          <div class="flex justify-center items-center gap-[117px] bg-[#FFF9F4] rounded-lg p-7 sm: mx-5">
+
+            <div>
+              <img src="c1-assets/cute-pet-mid.png" alt="">
+            </div>
+
+            <div>
+              <h1 class="ADLam-normal text-3xl my-3">Get Pawsome News</h1>
+              <p>
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <div class="my-3">
+                <input type="text" placeholder="Enter email...."class="rounded-lg w-[472px] h-[67px]" >
+              </div>
+              <button class="btn bg-[#FFDC26]">Subscribe</button>
+            </div>
+
+          </div>
         </section>
 
     </main>
