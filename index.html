@@ -58,7 +58,7 @@
           <div class="lg:hidden mx-5 p-2 flex justify-between items-center">
 
             <div>
-              <img src="c1-assets/logo-header.png" alt="">
+              <img class="animate-bounce"src="c1-assets/logo-header.png" alt="">
             </div>
             <div>
               <div class="lg:hidden relative">
@@ -82,7 +82,7 @@
 
             <div class="flex items-center gap-3">
               <div>
-                <img src="c1-assets/logo-header.png" alt="">
+                <img class="animate-bounce" src="c1-assets/logo-header.png" alt="">
               </div>
               <div>
                 <h1>Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
@@ -100,10 +100,10 @@
 
           <div class="flex items-center gap-5">
 
-            <div><i class="fa-regular fa-bell"></i></div>
+            <div><i class="fa-regular fa-bell animate-bounce"></i></div>
             <div><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div><button class="btn bg-transparent border-[#FFDC26]">Login</button></div>
-            <div><button class="btn bg-[#FFDC26]">Register</button></div>
+            <div><button class="btn bg-transparent border-[#FFDC26] animate-pulse">Login</button></div>
+            <div><button class="btn bg-[#FFDC26] ">Register</button></div>
 
           </div>
 
@@ -122,13 +122,18 @@
               Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!
             </p>
         
-            <button class="btn bg-[#FFDC26] px-6 py-3 rounded-lg mx-5">
+            <button class="btn bg-[#FFDC26] px-6 py-3 animate-bounce rounded-lg mx-5"><span class="relative flex size-3">
+              <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex size-3 rounded-full bg-sky-500 "></span>
+            </span>
+            
+            
               Find a pet
             </button>
           </div>
         
           <!-- Image is below the text with full width -->
-          <div class="sm: absolute left-0 w-full bottom-[-200px] lg:left-0 w-full -bottom-[100px]">
+          <div class="sm: absolute left-0 w-full bottom-[-200px] lg:left-0 ">
             <img class="w-full" src="c1-assets/cat-big.png" alt="Cat">
           </div>
         </section>
